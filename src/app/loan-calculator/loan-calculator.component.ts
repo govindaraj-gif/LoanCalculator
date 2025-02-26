@@ -14,4 +14,9 @@ export class LoanCalculatorComponent {
     this.estimatedAmount = (this.loanAmount / this.loanPeriod).toString();
     this.estimatedAmount = Number(this.estimatedAmount).toFixed(3);
   }
+
+  console(){
+    console.log(`EstimatedAmount = ${this.estimatedAmount}` ,`Loan Period = ${this.loanPeriod}`, `Loan Amount = ${this.loanAmount}`);
+    
+  }
 }
