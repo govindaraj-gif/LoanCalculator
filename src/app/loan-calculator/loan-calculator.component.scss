@@ -1,0 +1,60 @@
+.container{
+    width: 500px;
+    background-color: rgb(18, 21, 54);
+    border-radius: 10px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: rgb(30, 48, 67);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.card:hover {
+    border: 1px solid #618de7;  /* Light border */
+    box-shadow: 0 4px 10px rgba(8, 64, 88, 0.1); /* Border shadow */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.slider-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .slider {
+    width: 100%;
+  }
+  
+  label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+button{
+    width: 80%;
+    height: 50px;
+    background-color: #61b2e0;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+

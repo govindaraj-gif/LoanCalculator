@@ -1,0 +1,117 @@
+<div class="main-container">
+    <div class="container" style="padding-top: 30px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div style="margin-left: 80px;">
+                <mat-icon>keyboard_arrow_left</mat-icon>
+            </div>
+            <div style="text-align: center; flex-grow: 1;font-weight: 600;">
+                Loan Calculator
+            </div>
+            <div style="text-align: end;margin-right: 80px;">
+                <mat-icon>more_vert</mat-icon>
+            </div>
+        </div>
+        
+
+        <div style="display: flex;justify-content: center;margin-top: 10px;">
+            <div style="height: 150px; width: 350px;" class="card">
+                <div style="text-align: center;">
+                    maximum Funding
+                </div>
+                <div style="text-align: center;">
+                    <h1>Rp 17.484.500</h1>
+                </div>
+                <hr>
+                <div style="display: flex;">
+                    <div>
+                        Honda ADV 150 CBS <br>
+                        2022
+                    </div>
+                    <div style="margin-left: auto;">
+                        <mat-icon style="transform: rotate(90deg);">tune</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div style="display: flex;justify-content: center;">
+            <div style="height: 110px; width: 350px;" class="card">
+                <div>
+                    Loan Amount
+                </div>
+                <div>
+                    <h3>Rp {{ loanAmount }}</h3>
+                </div>
+                <div class="slider-container">
+                    <input
+                      type="range"
+                      id="slider"
+                      min="1000000"
+                      max="17400000"
+                      [(ngModel)]="loanAmount"
+                      (input)="onSliderChange()"
+                      class="slider"
+                    />
+                </div>
+                <div style="display: flex;">
+                    <div>
+                        1000000
+                    </div>
+                    <div style="margin-left: auto;">
+                        17400000
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;justify-content: center;">
+            <div style="height: 110px; width: 350px;" class="card">
+                <div>
+                    Loan Period
+                </div>
+                <div>
+                    <h3> {{ loanPeriod }} months</h3>
+                </div>
+                <div class="slider-container">
+                    <input
+                      type="range"
+                      id="slider"
+                      min="6"
+                      max="18"
+                      [(ngModel)]="loanPeriod"
+                      (input)="onSliderChange()"
+                      class="slider"
+                    />
+                </div>
+                <div style="display: flex;">
+                    <div>
+                        6 months
+                    </div>
+                    <div style="margin-left: auto;">
+                        18 months
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: rgb(30, 48, 67);padding: 30px;">
+            <div>
+                <div>
+                    Estimated monthly installments
+                    <h1>RP {{ estimatedAmount }}</h1>
+                </div>
+                <div>
+                    <p>
+                        Installment fees may changes according to the result of the varification of the physical condition
+                        of the vehicle of the branch office.
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex;justify-content: center;">
+                <button>Appy Loan</button>
+            </div>
+
+
+        </div>
+    </div>
+    
+</div>
