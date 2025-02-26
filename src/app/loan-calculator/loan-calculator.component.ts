@@ -17,6 +17,6 @@ export class LoanCalculatorComponent {
 
   console(){
     console.log(`EstimatedAmount = ${this.estimatedAmount}` ,`Loan Period = ${this.loanPeriod}`, `Loan Amount = ${this.loanAmount}`);
-    
+    alert("The Values are Console Logged!")
   }
 }
